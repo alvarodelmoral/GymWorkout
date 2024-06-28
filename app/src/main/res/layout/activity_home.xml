@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <ImageButton
+        android:id="@+id/menu_button_home"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/fui_transparent"
+        android:onClick="showPopup"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/plans_text"
+        android:layout_width="203dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/bebas_neue_regular"
+        android:text="@string/plans"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_createGroup"
+        android:layout_width="280dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/baseline_directions_run_24"
+        android:text="@string/joingroup_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plans_text" />
+
+    <Button
+        android:id="@+id/button_joinGroup"
+        android:layout_width="280dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/weight_lifter"
+        android:text="@string/create_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_createGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
